@@ -18,9 +18,7 @@ function App() {
             >
               Налоговый вычет
             </button></div>} 
-          <div className={style.block_modal}>
-            {isModal && <ModalBox active={isModal} setActive={setIsModal} />}
-          </div>
+            {isModal && <div className={style.block_modal}><ModalBox active={isModal} setActive={setIsModal} /></div>}
         </div>
       </div>
     </div>
