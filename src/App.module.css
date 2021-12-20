@@ -1,0 +1,86 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(
+      255.35deg,
+      #dc3131 0.83%,
+      rgba(255, 79, 79, 0) 108.93%
+    ),
+    #ff5e56;
+  box-shadow: 0px -0.11px 16.9495px rgba(183, 187, 225, 0.33);
+}
+
+.button{
+  font-family: Lab Grotesque;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  border: none;
+  border:1px solid white;
+  padding: 16px 32px;
+  border-radius: 6px;
+  text-transform: none;
+  background: none;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.block_modal{
+  padding-bottom: 30px;
+}
+
+.button:disabled{
+  background: #BEC5CC;
+}
+
+.modal_open{
+  padding-top: 120px;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flexbox_modal{
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .button{
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+
+  .flexbox_modal{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    height: 100%;
+  }
+
+  .modal_open{
+    padding-top: 0;
+  }
+
+  .block_modal{
+    padding-bottom: 0;
+  }
+}
+

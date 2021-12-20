@@ -1,0 +1,48 @@
+.part {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dfe3e6;
+  padding: 16px 0;
+}
+
+.input {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url("../../../img/Checkbox_normal.svg");
+  cursor: pointer;
+}
+
+.input:hover + .square {
+  background-image: url("../../../img/Checkbox_hover.svg");
+}
+
+.input:checked + .square {
+  background-image: url("../../../img/mdi_done.svg");
+}
+
+.input:disabled + .square {
+  background-image: url("../../../img/Checkbox_disabled.svg");
+}
+
+.label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.label_desc {
+  color: #808080;
+}

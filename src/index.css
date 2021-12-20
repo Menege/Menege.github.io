@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('LabGrotesque-Regular'), 
+  url('./fonts/LabGrotesque-Regular.ttf') format('truetype'),
+  url('./fonts/LabGrotesque-Regular.ttf') format('embedded-opentype'),
+  url('./fonts/LabGrotesque-Regular.ttf') format('woff2'),
+  url('./fonts/LabGrotesque-Regular.ttf') format('woff'),
+  url('./fonts/LabGrotesque-Regular.ttf') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('LabGrotesque-Medium'), 
+  url('./fonts/LabGrotesque-Medium.ttf') format('truetype'),
+  url('./fonts/LabGrotesque-Medium.ttf') format('embedded-opentype'),
+  url('./fonts/LabGrotesque-Medium.ttf') format('woff2'),
+  url('./fonts/LabGrotesque-Medium.ttf') format('woff'),
+  url('./fonts/LabGrotesque-Medium.ttf') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Lab Grotesque;
+  margin:0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
