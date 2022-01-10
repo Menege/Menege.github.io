@@ -1,6 +1,7 @@
 import style from "./modalbox.module.css";
 import CalcBlock from "./CalcBlock";
 import { useState} from "react";
+import exitIcon from '../img/Vector.svg'
 
 const mrot = 12130;
 
@@ -62,7 +63,7 @@ export default function ModalBox({ active, setActive }) {
           setIsCalc(false);
         }}
       >
-        <img src="/images/Vector.svg" alt="Выход" />
+        <img src={exitIcon} alt="Выход" />
       </div>
       <span className={style.title}>Налоговый вычет</span>
       <p className={style.desc}> {desc} </p>
