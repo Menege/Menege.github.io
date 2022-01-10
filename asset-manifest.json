@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/outside/static/css/main.2a07f6cc.css",
+    "main.js": "/outside/static/js/main.96751f89.js",
+    "static/js/787.cfd8f164.chunk.js": "/outside/static/js/787.cfd8f164.chunk.js",
+    "static/media/LabGrotesque-Medium.ttf": "/outside/static/media/LabGrotesque-Medium.dbfc938f23515b9be174.ttf",
+    "static/media/LabGrotesque-Regular.ttf": "/outside/static/media/LabGrotesque-Regular.2b7d5ea425494e477703.ttf",
+    "static/media/mdi_done.svg": "/outside/static/media/mdi_done.5e2e39b033aa1b3918a4.svg",
+    "index.html": "/outside/index.html",
+    "static/media/Checkbox_disabled.svg": "/outside/static/media/Checkbox_disabled.ad6ee84ccf37016caa48.svg",
+    "static/media/Checkbox_normal.svg": "/outside/static/media/Checkbox_normal.62fcdc86469c4e9cae4a.svg",
+    "static/media/Checkbox_hover.svg": "/outside/static/media/Checkbox_hover.48c3b15348bb227dcb2f.svg",
+    "main.2a07f6cc.css.map": "/outside/static/css/main.2a07f6cc.css.map",
+    "main.96751f89.js.map": "/outside/static/js/main.96751f89.js.map",
+    "787.cfd8f164.chunk.js.map": "/outside/static/js/787.cfd8f164.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a07f6cc.css",
+    "static/js/main.96751f89.js"
+  ]
+}
