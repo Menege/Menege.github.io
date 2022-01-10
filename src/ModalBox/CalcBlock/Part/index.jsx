@@ -1,4 +1,5 @@
 import style from './part.module.css'
+import NumberFormat from "react-number-format";
 
 export default function Part({sumYear, idx}) {
 
@@ -28,7 +29,7 @@ export default function Part({sumYear, idx}) {
         <div className={style.part}>
                <input className={style.input} type="checkbox" id={idRand}/>
                <span className={style.square}></span>
-               <label className={style.label} htmlFor={idRand}>{sumYear} рублей <span className={style.label_desc}>{handlerEnding()} год</span></label>
+               <label className={style.label} htmlFor={idRand}><NumberFormat displayType={'text'} value={sumYear} thousandSeparator=" " /> рублей <span className={style.label_desc}>{handlerEnding()} год</span></label>
            </div>
     )
 }

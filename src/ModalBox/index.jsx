@@ -2,6 +2,7 @@ import style from "./modalbox.module.css";
 import CalcBlock from "./CalcBlock";
 import { useState} from "react";
 import exitIcon from '../img/Vector.svg'
+import NumberFormat from "react-number-format";
 
 const mrot = 12130;
 
@@ -15,9 +16,10 @@ export default function ModalBox({ active, setActive }) {
   const [error, setError] = useState(false);
 
   //Проверка введенного значения ссответствию МРОТ в РФ
-  const handlerSalary = (event) => {
-    if (event.target.value > mrot) {
-      setInput(+event.target.value);
+  const handlerSalary = (values) => {
+    const {formattedValue, value} = values;
+    if (value > mrot) {
+      setInput(value);
       setError(false);
     } else {
       setInput("");
@@ -69,15 +71,17 @@ export default function ModalBox({ active, setActive }) {
       <p className={style.desc}> {desc} </p>
       <form action="">
         <span className={style.quest}>Ваша зарплата в месяц</span>
-        <input
-          type="text"
+        <NumberFormat
+          value={input}
+          thousandSeparator=" "
+          suffix=" ₽"
           placeholder="Введите данные"
-          onChange={handlerSalary}
+          onValueChange={handlerSalary}
           className={error ? style.salary_input_error : style.salary_input}
         />
         {error && (
           <div className={style.text_error}>
-            Введите заработную плату в числовом формате и выше минимального
+            Введите заработную плату выше минимального
             размера (МРОТ в РФ 12 130 ₽)
           </div>
         )}
