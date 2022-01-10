@@ -4,6 +4,7 @@ export default function Part({sumYear, idx}) {
 
     let idRand=(Math.random() / Math.random()) * Math.random();
 
+    //Добавление окончания к числительным
     const handlerEnding=()=>{
         let curIdx=idx+1;
         if (curIdx<10){

@@ -13,6 +13,7 @@ export default function ModalBox({ active, setActive }) {
   const [arr, setArr] = useState([]);
   const [error, setError] = useState(false);
 
+  //Проверка введенного значения ссответствию МРОТ в РФ
   const handlerSalary = (event) => {
     if (event.target.value > mrot) {
       setInput(+event.target.value);
@@ -22,10 +23,12 @@ export default function ModalBox({ active, setActive }) {
     }
   };
 
+  //Снятие события по умолчанию с кнопки
   const buttonAction = (e) => {
     e.preventDefault();
   };
 
+  //Расчет ежемесячного вычета
   const handlerCalc = () => {
     setArr([]);
     if (input) {
